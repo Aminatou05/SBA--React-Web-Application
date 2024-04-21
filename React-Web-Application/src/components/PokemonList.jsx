@@ -26,8 +26,9 @@ const PokemonList = () => {
   };
 
   return (
-    <div>
-      <h1> Enter a Pokémon name to Search</h1>
+    <div className="container">
+      <h1>Welcome, Pokémon Trainer!</h1>
+      <h2> Enter a Pokémon name to Search</h2>
       <form onSubmit={handleSearch}>
         <input
           type="text"
