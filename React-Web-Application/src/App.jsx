@@ -1,13 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
+import PokemonList from './components/PokemonList';
+import PokemonDetails from './PokemonDetails';
 
-import './App.css'
 
-function App() {
- 
+const App = () => {
   return (
-    <>
-      <h1>Bismillah</h1>
-    </>
-  )
-}
+    
+      <Routes>
+        <Route path="/" element={<PokemonList />} />
+        <Route path="/pokemon/:id" element={<PokemonDetails />} />
+      </Routes>
 
-export default App
+  );
+};
+
+export default App;
+
+
