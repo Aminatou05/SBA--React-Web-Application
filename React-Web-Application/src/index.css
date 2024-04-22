@@ -1,3 +1,22 @@
+/* Header.css */
+.header {
+  background-color: #0f5c58;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Footer.css */
+.footer {
+  background-color: #0f5c58;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+
 .container {
   display: flex;
   justify-content: center;
@@ -17,7 +36,7 @@
 }
 
 .container input[type="text"] {
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 15px;
 }
 
