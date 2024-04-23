@@ -5,7 +5,7 @@ const PokemonList = () => {
   const [pokemonData, setPokemonData] = useState(null);
   const [error, setError] = useState(null);
 
-  //using 
+  //using useEffect
   useEffect(() => {
     const fetchPokemonData = async () => {
       try {
