@@ -5,11 +5,12 @@ const PokemonList = () => {
   const [pokemonData, setPokemonData] = useState(null);
   const [error, setError] = useState(null);
 
-  //using useEffect
+
+  //  // Using useEffect to fetch data for a default Pokemon (Pikachu) on component mount
   useEffect(() => {
     const fetchPokemonData = async () => {
       try {
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm.toLowerCase()}`);
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
         if (!response.ok) {
           throw new Error('Pokemon not found');
         }
@@ -21,14 +22,15 @@ const PokemonList = () => {
         setError('Pokemon not found');
       }
     };
-
-    // Fetch initial data for a default Pokemon (e.g., Pikachu)
+  
     fetchPokemonData();
-  }, []); // Empty dependency array means this effect runs only once, on mount
+  }, []);
+   // Empty dependency array means this effect runs only once, on mount
 
-  const handleSearch = async (event) => {
+   const handleSearch = async (event) => {
     event.preventDefault();
     try {
+      // Fetch data for the entered Pokémon name
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm.toLowerCase()}`);
       if (!response.ok) {
         throw new Error('Pokemon not found');
@@ -37,12 +39,14 @@ const PokemonList = () => {
       setPokemonData(data);
       setError(null);
     } catch (error) {
+      // Handle error if Pokémon is not found
       setPokemonData(null);
       setError('Pokemon not found');
     }
   };
-
+  
   const handleSearchChange = (event) => {
+    // Update the search term as the user types in the input field
     setSearchTerm(event.target.value);
   };
 
