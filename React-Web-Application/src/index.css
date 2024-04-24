@@ -26,7 +26,7 @@
 
 .container button {
   padding: 5px 10px;
-  background-color: #104072;
+  background-color: #101b26;
   color: white;
   border: none;
   border-radius: 3px;
@@ -34,7 +34,7 @@
 }
 
 .container button:hover {
-  background-color: #0056b3;
+  background-color: #295b4d;
 }
 
 .container .pokemon-details {

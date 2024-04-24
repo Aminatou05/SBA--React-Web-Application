@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-// import PokemonDetails from './PokemonDetails';
 import PokemonList from './components/PokemonList';
 import Welcome from './pages/Welcome';
 import About from './pages/About';
