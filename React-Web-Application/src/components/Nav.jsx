@@ -6,13 +6,13 @@ export default function Nav(props) {
   return (
     <div className='nav'>
       <Link to='/'>
-        <div>Welcome page</div>
+        <div>Welcome</div>
       </Link>
       <Link to='/pokemon/:id'>
-        <div>Pokémons</div>
+        <div>Pokémon</div>
       </Link>
       <Link to="/about">
-        <div>About Page</div>
+        <div>About</div>
       </Link>
     </div>
   )
