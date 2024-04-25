@@ -6,11 +6,11 @@ const PokemonList = () => {
   const [error, setError] = useState(null);
 
 
-  //  // Using useEffect to fetch data for a default Pokemon (Pikachu) on component mount
+  //  // Using useEffect to fetch data for a default Pokemon (mewtwo) on component mount
   useEffect(() => {
     const fetchPokemonData = async () => {
       try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon/mewtwo');
         if (!response.ok) {
           throw new Error('Pokemon not found');
         }
@@ -19,7 +19,7 @@ const PokemonList = () => {
         setError(null);
       } catch (error) {
         setPokemonData(null);
-        setError('Pokemon not found');
+        // setError('Pokemon not found');
       }
     };
   
@@ -41,7 +41,7 @@ const PokemonList = () => {
     } catch (error) {
       // Handle error if Pokémon is not found
       setPokemonData(null);
-      setError('Pokemon not found');
+      // setError('Pokemon not found');
     }
   };
   
