@@ -22,5 +22,5 @@ The `About` component is a React functional component that renders an informatio
 
  ## Welcome Component
 This  page contains a simple React component that renders a welcome message.
-## Component Description
 The `Welcome` component is a functional component that returns a `div` element with the class `welcome`. Inside this `div`, it renders an `h1` tag with the text "Welcome".
+added css on all pages to create a greate user experience.
