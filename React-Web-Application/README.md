@@ -25,4 +25,4 @@ This  page contains a simple React component that renders a welcome message.
 The `Welcome` component is a functional component that returns a `div` element with the class `welcome`. Inside this `div`, it renders an `h1` tag with the text "Welcome".
 added css on all pages to create a greate user experience.
 
-Link to Netlify  https://662ab0a73d785e04a99d77a2--stupendous-manatee-3c67d8.netlify.app/
+Link to Netlify  https://minapro-manatee-3c67d8.netlify.app/
